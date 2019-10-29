@@ -1,0 +1,34 @@
+.searchBar {
+  background-color: #41be57;
+  padding: 20rpx;
+}
+
+.searchBar .barcontent {
+  background-color: #fff;
+  height: 60rpx;
+  width: 100%;
+  border-radius: 8rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchBar .barcontent image {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.searchBar .input-group {
+  background-color: #fff;
+  height: 60rpx;
+  width: 100%;
+  border-radius: 8rpx;
+  padding: 10rpx 20rpx;
+  box-sizing: border-box;
+}
+
+.searchBar .input-group input {
+  min-height: 40rpx;
+  height: 40rpx;
+  font-size: 24rpx;
+}

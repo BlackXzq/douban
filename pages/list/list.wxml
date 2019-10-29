@@ -1,0 +1,8 @@
+
+<searchBar isnavigator="{{true}}" bindgotoSearchPage="gotoSearchPage"></searchBar>
+<view class="container">
+  <itemview wx:for="{{dataList}}" 
+            wx:key="{{item.id}}"
+            itemtype="{{type}}"
+            item="{{item}}"></itemview>
+</view>

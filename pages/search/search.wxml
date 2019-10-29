@@ -1,0 +1,30 @@
+<searchBar bindsearchInputChange="searchInputChange"></searchBar>
+
+<view wx:if="{{historys.length > 0 && results.length == 0}}" class="search-history-group">
+  <view class="history-header">
+    <view class="title">历史记录</view>
+    <view class="clear" bindtap="clearHistoryEvent">清除</view>
+  </view>
+  <view wx:for="{{historys}}" 
+  wx:key="{{item.id}}" 
+  data-id="{{item.id}}"
+  bindtap="searchItemEvent"
+  class="history-item">{{item.title}}</view>
+</view>
+
+<view class="result-group">
+  <view wx:for="{{results}}" 
+        wx:key="{{item.id}}" 
+        data-id="{{item.id}}"
+        data-title="{{item.title}}"
+        bindtap="itemTapEvent"
+        class="result-item">
+    <image src="{{item.pic.normal}}"></image>
+    <view class="item-content">
+      <view class="title">{{item.title}}</view>
+      <view class="detail">{{item.rating.value}}分/{{item.year}}</view>
+    </view>
+  </view>
+</view>
+
+<view wx:if="{{historys.length == 0 && results.length == 0}}" class="nodata">暂无数据</view>

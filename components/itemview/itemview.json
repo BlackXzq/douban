@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "rate-star": "/components/stars/stars"
+  }
+}

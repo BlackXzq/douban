@@ -1,0 +1,13 @@
+<view class="remark-content">
+  <view class="avatar">
+    <image src="{{comment.user.avatar}}"></image>
+  </view>
+  <view class="content-group">
+    <view class="content-autor">
+      <view class="autor">{{comment.user.name}}</view>
+      <rate-star rate="{{comment.rating.value*2}}" showPoint="{{false}}" fontSize="30" starSize="30" fontColor="#999"></rate-star>
+    </view>
+    <view class="remark-time">{{comment.create_time}}</view>
+    <view class="remark-detail">{{comment.comment}}</view>
+  </view>
+</view>

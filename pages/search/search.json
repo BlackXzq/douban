@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "searchBar": "/components/searchbar/searchbar"
+  },
+  "navigationBarTitleText": "搜索列表"
+}

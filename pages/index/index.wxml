@@ -1,0 +1,8 @@
+<searchBar isnavigator="{{true}}" bindgotoSearchPage="gotoSearchPage"></searchBar>
+
+<sort-moudle title="电影" items="{{movieList}}" itemtype="movie" moreurl="{{moviePath}}"></sort-moudle>
+
+<sort-moudle title="电视剧" items="{{tvsList}}" itemtype="tv" moreurl="{{tvPath}}"></sort-moudle>
+
+<sort-moudle title="综艺" items="{{tvVariety}}" itemtype="tvshow" moreurl="{{tvshowPath}}"></sort-moudle>
+

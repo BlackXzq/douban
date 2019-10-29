@@ -1,0 +1,18 @@
+<view class="stars-group">
+  <image wx:for="{{lights}}" 
+          wx:key="*this" 
+          src="/images/star-light.png"
+          style="width:{{starSize}}rpx;height:{{starSize}}rpx"
+          ></image>
+  <image wx:for="{{halfs}}" 
+          wx:key="*this" 
+          src="/images/star-half.png"
+          style="width:{{starSize}}rpx;height:{{starSize}}rpx"
+          ></image>
+  <image wx:for="{{grays}}" 
+          wx:key="*this" 
+          src="/images/star-gray.png"
+          style="width:{{starSize}}rpx;height:{{starSize}}rpx"
+          ></image>
+  <text wx:if="{{showPoint}}" style="font-size:{{fontSize}}rpx;color:{{fontColor}}">{{rateText}}</text>
+</view>

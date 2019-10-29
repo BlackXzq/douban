@@ -1,0 +1,14 @@
+<view class="moudle-group">
+  <view class="moudle-group-top">
+    <view class="moulde-name">{{title}}</view>
+    <navigator url="{{moreurl}}" class="moudle-more">更多</navigator>
+  </view>
+  <scroll-view class="moudle-scrollview" scroll-x="{{true}}">
+    <itemview wx:for="{{items}}" 
+              wx:key="{{item.id}}"
+              item="{{item}}"
+              itemtype="{{itemtype}}"
+              class="itemview">
+    </itemview>
+  </scroll-view>
+</view>

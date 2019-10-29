@@ -1,0 +1,33 @@
+.moudle-group {
+  padding: 30rpx;
+}
+
+.moudle-group-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 20rpx 0rpx;
+}
+
+.moudle-group-top .moulde-name {
+  font-size: 36rpx;
+  color: #494949;
+}
+
+.moudle-group-top .moudle-more {
+  font-size: 32rpx;
+  color: #41be57;
+}
+
+.moudle-scrollview {
+  width: 100%;
+  white-space: nowrap;
+}
+
+.moudle-scrollview .itemview {
+  margin-right: 20rpx; 
+}
+
+.moudle-scrollview .itemview:last-of-type {
+  margin-right: 0; 
+}
+

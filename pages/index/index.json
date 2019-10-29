@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "searchBar": "/components/searchbar/searchbar",
+    "sort-moudle": "/components/sortmoudle/sortmoudle"
+  }
+}

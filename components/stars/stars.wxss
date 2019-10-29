@@ -1,0 +1,16 @@
+.stars-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stars-group image {
+  width: 20rpx;
+  height: 20rpx;
+}
+
+.stars-group text {
+  font-size: 20rpx;
+  color: #ccc;
+  margin-left: 10rpx;
+}

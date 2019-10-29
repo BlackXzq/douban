@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "rate-star": "/components/stars/stars",
+    "comment": "/components/comment/comment"
+  },
+  "navigationBarTitleText": "详情"
+}

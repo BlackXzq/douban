@@ -1,0 +1,43 @@
+
+
+.remark-content {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 30rpx;
+}
+
+.remark-content .avatar {
+  margin-right: 20rpx;
+}
+
+.remark-content .avatar image {
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 50%;
+}
+
+.content-group {
+  flex: 1;
+}
+
+.content-group .content-autor {
+  display: flex;
+  align-items: center;
+}
+
+.content-group .content-autor .autor {
+  font-size: 36rpx;
+  margin-right: 10rpx;
+}
+
+.content-group .remark-time {
+  font-size: 32rpx;
+  color: #b3b3b3;
+  margin-top: 10rpx;
+}
+
+.content-group .remark-detail {
+  font-size: 32rpx;
+  color: #353535;
+  margin-top: 10rpx;
+}

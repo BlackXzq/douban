@@ -1,0 +1,40 @@
+<view class="container">
+  <view class="header">
+    <view class="header-title">{{detail.title}} ({{detail.year}})</view>
+    <view class="header-content">
+      <view class="header-left">
+        <view class="header-rating">
+          <rate-star rate="{{detail.rating.value}}" fontSize="30" starSize="30" fontColor="#999"></rate-star>
+          <view class="remark">{{detail.rating.count}}人评价</view>
+        </view>
+        <view class="header-deatail">
+          <view>{{detail.durations[0]}} {{detail.genres}}</view>
+          <view> {{detail.pubdate[0]}}</view>
+          <view> {{detail.card_subtitle}} </view>
+        </view>
+      </view>
+      <view class="header-right">
+        <image src="{{detail.pic.normal}}"></image>
+      </view>
+    </view>
+  </view>
+
+  <view class="item-tag">
+    <view class="tag-title">豆瓣成员常用标签</view>
+    <view class="tag-detail">
+      <text wx:for="{{tags}}" wx:key="*this">{{item}}</text>
+    </view>
+  </view>
+
+  <view class="reamark-group">
+    <view class="remark-title">短评({{totalComments}})</view>
+    <comment  wx:for="{{comments}}" 
+              wx:key="{{item.id}}" 
+              comment="{{item}}"></comment>
+  </view>
+
+  <navigator wx:if="{{totalComments > 3}}" 
+              url="../comment-list/comment-list?id={{id}}&type={{type}}&title={{detail.title}}&imagepath={{detail.pic.normal}}&rate={{detail.rating.value}}"
+              class="seeMore">查看更多内容</navigator>
+
+</view>

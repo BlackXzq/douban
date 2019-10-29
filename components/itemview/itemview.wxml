@@ -1,0 +1,8 @@
+<navigator wx:if="{{item}}" url="/pages/detail/detail?id={{item.id}}&type={{itemtype}}" class="item-navigator">
+  <view class="moudle-item">
+    <image class="item-image" src="{{item.cover.url}}"></image>
+    <view class="item-name">{{item.title}}</view>
+    <rate-star class="rate-star" rate="{{item.rating.value}}"></rate-star>
+  </view>
+</navigator>
+<view wx:else class="item-navigator"></view>

@@ -1,0 +1,19 @@
+<view class="header" bindtap="tapItemDetailClick">
+  <image src="{{imagepath}}"></image>
+  <text class="header-title">{{title}}</text>
+  <text class="header-rate">{{rate}}分</text>
+</view>
+
+<view class="comment-group">
+  <view class="comment-group-title">
+    全部影评（{{totalComments}}）
+  </view>
+  <comment  wx:for="{{comments}}" 
+              wx:key="{{item.id}}" 
+              comment="{{item}}"></comment>
+</view>
+
+<view class="bottom-group">
+  <button disabled="{{!preEnable}}" bindtap="tapPreBtnClick" class="pre-btn">上一页</button>
+  <button disabled="{{nextEnable}}" bindtap="tapNextBtnClick" class="next-btn">下一页</button>
+</view>

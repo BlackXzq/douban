@@ -1,0 +1,9 @@
+<view class="searchBar">
+  <view wx:if="{{isnavigator}}" class="barcontent" bindtap="gotoSearchPage">
+    <image src="/images/search.png"></image>
+  </view>
+  
+  <view wx:else class="input-group">
+    <input placeholder="搜索" bindinput="searchInputClick" ></input>
+  </view>
+</view>
